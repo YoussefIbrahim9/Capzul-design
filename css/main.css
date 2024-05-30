@@ -1,5 +1,5 @@
 body{
-    height: 200vh;
+    height: 100vh;
     background-color: #0f6ed9;
 }
 
@@ -67,4 +67,14 @@ body{
     font-size: 12px;
     font-weight: 600;
     position: absolute;
+}
+
+
+/* login page style */
+.container .row .adjut-hight{
+    height: 600px;
+}
+
+.bottom-40{
+    bottom: 25%;
 }

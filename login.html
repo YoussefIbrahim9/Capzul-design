@@ -3,12 +3,58 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Login | Capzul</title>
+        <title> Sign in | Cpazul</title>
+
+        <!-- page icon -->
         <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon">
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- main-stylesheet -->
+        <link rel="stylesheet" href="css/main.css">
+        <!-- mediaquery -->
+        <link rel="stylesheet" href="css/mediaqueries.css">
     </head>
 
-    <body>
+    <body class="position-relative">
 
-        
+        <div class="container position-absolute translate-middle start-50 top-50 "> 
+
+            <div class="row ">
+
+                <div class="col-md-6 col-lg-5 mx-auto bg-white p-3 adjut-hight position-relative ">
+
+                    <h3 class="text-center mt-5 fw-bolder ">Welcome to</h3>
+                    <div class="header d-flex mt-3 mb-5 justify-content-center">
+                        <div class="shape">
+
+                        </div>
+                        <span class="ms-2 mb-0 fw-bolder fs-5 text-uppercase">Cpazul </span>
+                    </div>
+
+                    <div class="form mb-5">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="loginUserName" placeholder="name@example.com">
+                            <label for="loginUserName">Email address</label>
+                        </div>
+
+                        <div class="form-floating my-4">
+                            <input type="password" class="form-control" id="loginUserPassword" placeholder="Password">
+                            <label for="loginUserPassword">Password</label>
+                        </div>
+                    </div>
+
+
+                    <button type="button" class="btn btn-primary position-absolute bottom-40 start-50 translate-middle px-4 "> Sign in</button>
+
+                    <div class="footer position-absolute bottom-0 w-100 start-0 border-top border-2 text-center">
+    
+                        <p class="px-3 my-3">Don't have an account? <a class="text-decoration-none" href="index.html" target="_blank">Sign Up </a> now</p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
     </body>
 </html>
