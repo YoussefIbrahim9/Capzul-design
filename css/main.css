@@ -1,0 +1,70 @@
+body{
+    height: 200vh;
+    background-color: #0f6ed9;
+}
+
+
+.container{
+    width: 90%;
+}
+
+.carsl{
+    background-color: #0476f3;
+}
+.carousel-inner img {
+    height: 360px; 
+    object-fit: contain; 
+}
+
+.carousel-indicators {
+    bottom: -45px;
+}
+
+.carousel-indicators [data-bs-target]{
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+}
+
+
+.shape {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: relative;
+    background: linear-gradient(to right, red, blue);
+  }
+  
+  .shape:before {
+    content: " ";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    background-color: white;
+  }
+
+  .shape::after{
+
+    content: " ";
+    position: absolute;
+    background-color: transparent;
+    border-top: #7e0080 solid 6px;
+    border-bottom: transparent solid 6px;
+    border-left: transparent solid 6px;
+    border-right: transparent solid 6px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    bottom: -15px;
+  }
+  
+.show-pass{
+    right: 10px;
+    top: 14px;
+    font-size: 12px;
+    font-weight: 600;
+    position: absolute;
+}
