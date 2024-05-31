@@ -62,14 +62,24 @@ function submitData(){
         }
 
         if(serchDuplicate(user)==false){
-            userAgreeAlertP.classList.remove("d-none");
+            userAgreeAlertP.classList.remove("opacity-0");
             userAgreeAlertP.innerHTML = "The user already exists"
 
         }
         else{
-            usersInfoList.push(user);
-            localStorage.setItem("Userinfo",JSON.stringify(usersInfoList));
-            userAgreeAlertP.classList.add("d-none");
+            
+            if(localStorage.getItem("Userinfo") !== null){
+                usersInfoList = JSON.parse(localStorage.getItem("Userinfo"));
+                usersInfoList.push(user);
+                localStorage.setItem("Userinfo",JSON.stringify(usersInfoList)); 
+            }
+            else{
+                localStorage.clear();
+                usersInfoList.push(user);
+                localStorage.setItem("Userinfo",JSON.stringify(usersInfoList));
+            }
+          
+            userAgreeAlertP.classList.add("opacity-0");
 
             window.location.href = "login.html";
 

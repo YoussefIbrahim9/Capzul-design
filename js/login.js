@@ -77,7 +77,7 @@ function loginEmailValidation(){
         }
         else{
             var arr = JSON.parse(localStorage.getItem("Userinfo")) ;
-            for(var i = 0 ;i< arr.length ; i++){
+            for(var i = 0 ; i < arr.length ; i++){
                 if(arr[i].uName.toLowerCase() == loginEmailInput.value.toLowerCase()){
                     loginEmailAlert.classList.add("opacity-0");
                     return true
