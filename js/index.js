@@ -80,10 +80,10 @@ function submitData(){
 
 function IsUserInputValid(){
     if(userNameVar.value == ""){
-        userAlertP.classList.remove("d-none");
+        userAlertP.classList.remove("opacity-0");
         return false;
     }
-    userAlertP.classList.add("d-none");
+    userAlertP.classList.add("opacity-0");
     return true;
 }
 
@@ -92,25 +92,23 @@ function IsEmailInputValid(){
     var regex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
 
     if(userEmailVar.value == ""){
-        userEmailAlertP.innerHTML = "*This field is required"
-        userEmailAlertP.classList.remove("d-none");
+        userEmailAlertP.classList.remove("opacity-0");
         return false;
     }
     if(!regex.test(userEmailVar.value)){
         userEmailAlertP.innerHTML = "Must be a valid Gmail"
-        userEmailAlertP.classList.remove("d-none");
+        userEmailAlertP.classList.remove("opacity-0");
         return false
     }
     else{
-        userEmailAlertP.classList.add("d-none");
+        userEmailAlertP.classList.add("opacity-0");
         return true;
     }
 }
 
 function IsBirthValid(){
     if(userDateVar.value == ""){
-        userDateAlertP.innerHTML = "*This field is required"
-        userDateAlertP.classList.remove("d-none");
+        userDateAlertP.classList.remove("opacity-0");
         return false;
     }
     if(userDateVar.value != ""){
@@ -120,11 +118,11 @@ function IsBirthValid(){
 
         if(reslt <= 0 | reslt >= 110 ){
             userDateAlertP.innerHTML = "Must be a valid input"
-            userDateAlertP.classList.remove("d-none");
+            userDateAlertP.classList.remove("opacity-0");
             return false;
         }
         else{
-            userDateAlertP.classList.add("d-none");
+            userDateAlertP.classList.add("opacity-0");
             return true;
         }
     }
@@ -135,19 +133,17 @@ function IsPasswordValid(){
     regex =/(?=.*\d)(?=.*[!@#$%^&*()_+])[A-Za-z\d!@#$%^&*()_+]{12,}/
 
     if(userPasswordVar.value == ""){
-        userPasswordAlertP.innerHTML = "*This field is required"
-        userPasswordAlertP.classList.remove("d-none");
+        userPasswordAlertP.classList.remove("opacity-0");
         return false;
     }
     else{
         if(!regex.test(userPasswordVar.value)){
             userPasswordAlertP.innerHTML = "Must be at least 12 characters, at least one number, and at least one special character"
-            userPasswordAlertP.classList.remove("d-none");
+            userPasswordAlertP.classList.remove("opacity-0");
             return false;
         }
         else{
-            userPasswordAlertP.innerHTML = ""
-            userPasswordAlertP.classList.add("d-none");
+            userPasswordAlertP.classList.add("opacity-0");
             return true;
         }
     }
@@ -155,19 +151,17 @@ function IsPasswordValid(){
 
 function DoPasswordsMatch(){
     if(userPasswordConfirmVar.value == ""){
-        userPassowrdConfirmAlertP.innerHTML = "*This field is required"
-        userPassowrdConfirmAlertP.classList.remove("d-none");
+        userPassowrdConfirmAlertP.classList.remove("opacity-0");
         return false;
     }
     else{
         if(userPasswordConfirmVar.value != userPasswordVar.value){
             userPassowrdConfirmAlertP.innerHTML = "Passwords should match"
-            userPassowrdConfirmAlertP.classList.remove("d-none");
+            userPassowrdConfirmAlertP.classList.remove("opacity-0");
             return false;
         }
         else{
-            userPassowrdConfirmAlertP.innerHTML = ""
-            userPassowrdConfirmAlertP.classList.add("d-none");
+            userPassowrdConfirmAlertP.classList.add("opacity-0");
             return true;
         }
     }
@@ -176,13 +170,11 @@ function DoPasswordsMatch(){
 
 function agreed(){
     if(!policiesCheckVar.checked){
-        userAgreeAlertP.innerHTML = "*This field is required"
-        userAgreeAlertP.classList.remove("d-none");
+        userAgreeAlertP.classList.remove("opacity-0");
         return false;
     }
     else{
-        userAgreeAlertP.innerHTML = ""
-        userAgreeAlertP.classList.add("d-none");
+        userAgreeAlertP.classList.add("opacity-0");
         return true
     }
 }

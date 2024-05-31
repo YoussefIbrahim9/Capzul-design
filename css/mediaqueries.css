@@ -4,3 +4,10 @@
         bottom: -28px !important;
     }
 }
+
+@media (max-width:991px) {
+    body{
+        height: 190vh;
+    }
+    
+}

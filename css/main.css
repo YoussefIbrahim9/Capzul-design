@@ -1,8 +1,15 @@
 body{
-    height: 100vh;
+    height: 120vh;
     background-color: #0f6ed9;
 }
 
+.fs-7{
+    font-size: 12px !important;
+}
+
+.height-100vh{
+    height: 110vh !important;
+}
 
 .container{
     width: 90%;
