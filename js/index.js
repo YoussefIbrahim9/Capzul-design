@@ -1,3 +1,4 @@
+
 var userNameVar = document.getElementById("userName");
 var userEmailVar = document.getElementById("userEmail");
 var userDateVar = document.getElementById("dateInput");

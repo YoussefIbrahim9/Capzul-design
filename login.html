@@ -32,19 +32,23 @@
                     </div>
 
                     <div class="form mb-5">
-                        <div class="form-floating mb-3">
+                        <div class="form-floating mb-2">
                             <input type="email" class="form-control" id="loginUserName" placeholder="name@example.com">
-                            <label for="loginUserName">Email address</label>
+                            <label for="loginUserName">Username</label>
+                            <p class="opacity-0 text-danger mt-1 mb-0" id="loginUserNameAlert">*This field is required</p>
                         </div>
 
-                        <div class="form-floating my-4">
+                        <div class="form-floating ">
                             <input type="password" class="form-control" id="loginUserPassword" placeholder="Password">
+                            <button class="show-pass btn btn-primary " id="showLogPassBtn" type="button">Show</button>
+                            <button class="show-pass btn btn-primary d-none" id="hideLogPassBtn" type="button">Hide</button>
                             <label for="loginUserPassword">Password</label>
+                            <p class="opacity-0 text-danger mt-1 mb-0" id="loginPassAlert">*This field is required</p>
                         </div>
                     </div>
 
 
-                    <button type="button" class="btn btn-primary position-absolute bottom-40 start-50 translate-middle px-4 "> Sign in</button>
+                    <button type="button" class="btn btn-primary position-absolute bottom-40 start-50 translate-middle px-4 " id="signInBtn"> Sign in</button>
 
                     <div class="footer position-absolute bottom-0 w-100 start-0 border-top border-2 text-center">
     
@@ -56,5 +60,7 @@
             </div>
         </div>
 
+
+        <script src="js/login.js"> </script>
     </body>
 </html>
