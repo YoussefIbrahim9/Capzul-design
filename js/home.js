@@ -1,12 +1,12 @@
 var logoutButtn = document.getElementById("logout");
 var welcomeUserSpan = document.getElementById("welcomeUserName");
 
-console.log(welcomeUserSpan);
 
-
+welcomeUserSpan.innerHTML = localStorage.getItem("currentUserName");
 
 function logoutFunction(){
     window.location.href = "login.html";
+    localStorage.removeItem("currentUserName");
 }
 
 logoutButtn.onclick = logoutFunction;

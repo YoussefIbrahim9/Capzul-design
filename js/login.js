@@ -21,6 +21,7 @@ function logginIn(){
     loginEmailValidation();
     loginPasswordValidation();
     if(loginEmailValidation() && loginPasswordValidation()){
+        localStorage.setItem("currentUserName", loginEmailInput.value.toLowerCase());
         window.location.href = "home.html";
         
     }
