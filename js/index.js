@@ -140,7 +140,7 @@ function IsBirthValid(){
 }
 
 function IsPasswordValid(){
-    regex =/(?=.*\d)(?=.*[!@#$%^&*()_+])[A-Za-z\d!@#$%^&*()_+]{12,}/
+    regex = /(?=.*\d)(?=.*[!@#$%^&*()_+])[A-Za-z\d!@#$%^&*()_+]{4,}/
 
     if(userPasswordVar.value == ""){
         userPasswordAlertP.classList.remove("opacity-0");
@@ -148,7 +148,7 @@ function IsPasswordValid(){
     }
     else{
         if(!regex.test(userPasswordVar.value)){
-            userPasswordAlertP.innerHTML = "Must be at least 12 characters, at least one number, and at least one special character"
+            userPasswordAlertP.innerHTML = "Must be at least 4 characters, at least one number, and at least one special character"
             userPasswordAlertP.classList.remove("opacity-0");
             return false;
         }

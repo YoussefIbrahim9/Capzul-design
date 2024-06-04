@@ -1,3 +1,5 @@
+ 
+
 var loginEmailInput = document.getElementById("loginUserName");
 var loginPasswordInput = document.getElementById("loginUserPassword");
 
@@ -13,11 +15,14 @@ loginShowPassBtn.onclick = showLoginPass;
 loginHidePassBtn.onclick = hideLoginPass;
 logInBtn.onclick = logginIn ;
 
+
+
 function logginIn(){
     loginEmailValidation();
     loginPasswordValidation();
     if(loginEmailValidation() && loginPasswordValidation()){
-        window.location.href = "https://youssefibrahim9.github.io/Age-calculator/";
+        window.location.href = "home.html";
+        
     }
 }
 
